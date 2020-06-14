@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using przykladowe_kol.Models;
 
 namespace przykladowe_kol.Migrations
 {
     [DbContext(typeof(ConfectioneryShopDbContext))]
-    partial class ConfectioneryShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200614195310_create2")]
+    partial class create2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using przykladowe_kol.Models;
+using przykladowe_kol.Services;
 
 namespace przykladowe_kol
 {
@@ -26,11 +27,11 @@ namespace przykladowe_kol
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<ConfectioneryIDbService, ConfectioneryDbService>();
             services.AddDbContext<ConfectioneryShopDbContext>(options =>
             {
                 options.UseSqlServer("Data Source=db-mssql;Initial Catalog=s16475;Integrated Security=True");
             });
-            
             services.AddControllers();
         }
 
