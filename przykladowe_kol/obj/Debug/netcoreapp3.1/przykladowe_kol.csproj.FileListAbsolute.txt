@@ -28,3 +28,5 @@ C:\Users\Ewa\Desktop\Grzesiek_APBD\przykladowe kolokwium\przykladowe_kol\przykla
 C:\Users\Ewa\Desktop\Grzesiek_APBD\przykladowe kolokwium\przykladowe_kol\przykladowe_kol\obj\Debug\netcoreapp3.1\przykladowe_kol.csproj.CopyComplete
 C:\Users\Ewa\Desktop\Grzesiek_APBD\przykladowe kolokwium\przykladowe_kol\przykladowe_kol\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Ewa\Desktop\Grzesiek_APBD\przykladowe kolokwium\przykladowe_kol\przykladowe_kol\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Ewa\Desktop\Grzesiek_APBD\przykladowe kolokwium\przykladowe_kol\przykladowe_kol\obj\Debug\netcoreapp3.1\przykladowe_kol.csproj.CoreCompileInputs.cache
+C:\Users\Ewa\Desktop\Grzesiek_APBD\przykladowe kolokwium\przykladowe_kol\przykladowe_kol\obj\Debug\netcoreapp3.1\przykladowe_kol.MvcApplicationPartsAssemblyInfo.cache
