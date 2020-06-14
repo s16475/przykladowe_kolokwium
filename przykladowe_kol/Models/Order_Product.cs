@@ -9,12 +9,8 @@ namespace przykladowe_kol.Models
 {
     public class Order_Product
     {
-        [Key]
-        [ForeignKey("Product")]
         [Required]
         public int IdProduct { get; set; }
-        [Key]
-        [ForeignKey("Order")]
         [Required]
         public int IdOrder { get; set; }
         [Required]

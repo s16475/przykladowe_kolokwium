@@ -29,6 +29,8 @@ namespace przykladowe_kol.Models
         {
             base.OnModelCreating(modelBuilder);
 
+            modelBuilder.Entity<Order_Product>().HasKey(k => new { k.IdOrder, k.IdProduct });
+
             modelBuilder.Entity<Client>().HasData(GetClientData());
             modelBuilder.Entity<Employee>().HasData(GetEmployeeData());
             modelBuilder.Entity<Order>().HasData(GetOrderData());
@@ -64,12 +66,12 @@ namespace przykladowe_kol.Models
         {
             var Orders = new List<Order>
             {
-                new Order {IdOrder = 1, DataPrzyjecia = DateTime.Parse("19-03-2020"), DataRealizacji = DateTime.Parse("20-03-2020"), Uwagi = null, IdClient = 1, IdEmployee = 1 },
-                new Order {IdOrder = 2, DataPrzyjecia = DateTime.Parse("22-04-2020"), DataRealizacji = DateTime.Parse("20-05-2020"), Uwagi = null, IdClient = 1, IdEmployee = 1 },
-                new Order {IdOrder = 3, DataPrzyjecia = DateTime.Parse("23-05-2020"), DataRealizacji = DateTime.Parse("20-06-2020"), Uwagi = null, IdClient = 2, IdEmployee = 2 },
-                new Order {IdOrder = 4, DataPrzyjecia = DateTime.Parse("10-03-2020"), DataRealizacji = DateTime.Parse("20-07-2020"), Uwagi = null, IdClient = 3, IdEmployee = 3 },
-                new Order {IdOrder = 5, DataPrzyjecia = DateTime.Parse("09-03-2020"), DataRealizacji = DateTime.Parse("20-08-2020"), Uwagi = null, IdClient = 4, IdEmployee = 3 },
-                new Order {IdOrder = 6, DataPrzyjecia = DateTime.Parse("08-03-2020"), DataRealizacji = DateTime.Parse("20-09-2020"), Uwagi = null, IdClient = 4, IdEmployee = 4 }
+                new Order {IdOrder = 1, DataPrzyjecia = DateTime.Now, DataRealizacji = DateTime.Now.AddDays(4), Uwagi = null, IdClient = 1, IdEmployee = 1 },
+                new Order {IdOrder = 2, DataPrzyjecia = DateTime.Now, DataRealizacji = DateTime.Now.AddDays(5), Uwagi = null, IdClient = 1, IdEmployee = 1 },
+                new Order {IdOrder = 3, DataPrzyjecia = DateTime.Now, DataRealizacji = DateTime.Now.AddDays(6), Uwagi = null, IdClient = 2, IdEmployee = 2 },
+                new Order {IdOrder = 4, DataPrzyjecia = DateTime.Now, DataRealizacji = DateTime.Now.AddDays(7), Uwagi = null, IdClient = 3, IdEmployee = 3 },
+                new Order {IdOrder = 5, DataPrzyjecia = DateTime.Now, DataRealizacji = DateTime.Now.AddDays(8), Uwagi = null, IdClient = 4, IdEmployee = 3 },
+                new Order {IdOrder = 6, DataPrzyjecia = DateTime.Now, DataRealizacji = DateTime.Now.AddDays(9), Uwagi = null, IdClient = 4, IdEmployee = 4 }
             };
             return Orders;
         }
