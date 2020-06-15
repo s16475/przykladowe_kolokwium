@@ -30,7 +30,8 @@ namespace przykladowe_kol
             services.AddScoped<ConfectioneryIDbService, ConfectioneryDbService>();
             services.AddDbContext<ConfectioneryShopDbContext>(options =>
             {
-                options.UseSqlServer("Data Source=db-mssql;Initial Catalog=s16475;Integrated Security=True");
+                //options.UseSqlServer("Data Source=db-mssql;Initial Catalog=s16475;Integrated Security=True");
+                options.UseSqlServer("Data Source=EWA;Initial Catalog=APBD1;Integrated Security=True");
             });
             services.AddControllers();
         }
